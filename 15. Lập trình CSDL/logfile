@@ -1,0 +1,81 @@
+LOG:  database system was shut down at 2017-03-27 17:55:37 ICT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-04-02 17:35:20 ICT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 2613) running in data directory "/Users/hoangnd/Code/FlaskTutorial/postgresDatabase"?
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-04-02 23:06:48 ICT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "hoangnd" does not exist
+FATAL:  database "hoangnd" does not exist
+ERROR:  syntax error at or near "databases" at character 38
+STATEMENT:  SELECT datname from pg_database
+	show databases
+	SELECT datname from postgresdemo
+	select * from cat
+	SELECT * FROM cat
+	SELECT * FROM cat;
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-04-02 23:51:56 ICT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  syntax error at or near ";" at character 17
+STATEMENT:  CREATE TABLE Pet;
+ERROR:  syntax error at or near ";" at character 17
+STATEMENT:  CREATE TABLE Pet;
+ERROR:  syntax error at or near ";" at character 17
+STATEMENT:  CREATE TABLE pet;
+ERROR:  null value in column "id" violates not-null constraint
+DETAIL:  Failing row contains (null, misa meo2, 9).
+STATEMENT:  INSERT INTO pet(name, age) VALUES('misa meo2','9')
+ERROR:  syntax error at or near "," at character 70
+STATEMENT:  CREATE TABLE pet(id integer, name varchar(100), age integer NOT NULL), PRIMARY KEY(id)
+ERROR:  table "pet" does not exist
+STATEMENT:  DROP TABLE pet
+ERROR:  relation "pet" already exists
+STATEMENT:  CREATE TABLE pet(id integer PRIMARY KEY, name varchar(100), age integer NOT NULL)
+ERROR:  null value in column "id" violates not-null constraint
+DETAIL:  Failing row contains (null, misa meo2, 9).
+STATEMENT:  INSERT INTO pet(name, age) VALUES('misa meo2','9')
+ERROR:  relation "pet" already exists
+STATEMENT:  CREATE TABLE pet(id serial PRIMARY KEY, name varchar(100), age integer NOT NULL)
+ERROR:  syntax error at or near "SELECT" at character 19
+STATEMENT:  SELECT * FROM pet
+	SELECT * FROM pet;
+ERROR:  relation "pet" does not exist at character 15
+STATEMENT:  SELECT * FROM pet;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+FATAL:  terminating connection due to administrator command
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-04-03 10:13:32 ICT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  relation "pet" already exists
+STATEMENT:  CREATE TABLE pet(id serial PRIMARY KEY, name varchar(100), age integer NOT NULL)
+ERROR:  relation "pet" does not exist at character 15
+STATEMENT:  SELECT * FROM pet;
