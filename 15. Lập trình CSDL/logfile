@@ -79,3 +79,7 @@ ERROR:  relation "pet" already exists
 STATEMENT:  CREATE TABLE pet(id serial PRIMARY KEY, name varchar(100), age integer NOT NULL)
 ERROR:  relation "pet" does not exist at character 15
 STATEMENT:  SELECT * FROM pet;
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
